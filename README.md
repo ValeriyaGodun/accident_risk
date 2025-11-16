@@ -137,6 +137,6 @@ XGBoost baseline                0.05618
 CatBoost baseline               0.05624
 NN baseline                     0.05661
 Ensemble CatBoost+XGBoost       0.05617
-Ensemble XGBoost+NN             0.05620 ```
-
+Ensemble XGBoost+NN             0.05620
+```
 На основе сравнения моделей можно сделать вывод, что лучшей одиночной моделью является XGBoost, CatBoost и нейросеть немного ему уступают, а наилучший результат достигается с помощью простого ансамбля CatBoost+XGBoost, который даёт небольшое улучшение RMSE.
