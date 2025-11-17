@@ -13,8 +13,8 @@
 - `3.xgboost_baseline.ipynb` - базовая модель XGBoost.
 - `4.catboost_baseline.ipynb` - базовая модель CatBoost.
 - `5.nn_baseline.ipynb` - базовая нейросеть на PyTorch.
-- `1.encemble_catboost_xgboost.ipynb` - ансамбль CatBoost + XGBoost (простое усреднение).
-- `2.encemble_nn_xgboost.ipynb` - ансамбль XGBoost + NN (взвешенное усреднение).
+- `1.ensemble_catboost_xgboost.ipynb` - ансамбль CatBoost + XGBoost (простое усреднение).
+- `2.ensemble_nn_xgboost.ipynb` - ансамбль XGBoost + NN (взвешенное усреднение).
 
 *Примечание: модели в репозитории расположены в возрастающем порядке (от лучшей метрики к худшей)*
 
@@ -97,7 +97,7 @@
 
 ## Ансамбли
 
-### CatBoost + XGBoost, простое усреднение (`1.encemble_catboost_xgboost.ipynb`)
+### CatBoost + XGBoost, простое усреднение (`1.ensemble_catboost_xgboost.ipynb`)
 
 **Идея**: объединить модели двух бустингов, усреднив их предсказания.
 
@@ -116,7 +116,7 @@ Ensemble    0.05617
 ```
 Ансамбль даёт небольшое, но стабильное улучшение RMSE по сравнению с каждой из одиночных моделей.
 
-### XGBoost + NN, взвешенное усреднение (`2.encemble_nn_xgboost.ipynb`)
+### XGBoost + NN, взвешенное усреднение (`2.ensemble_nn_xgboost.ipynb`)
 
 **Идея**: добавить в ансамбль модель другого типа (нейросеть), чтобы захватить иной тип зависимостей.
 
